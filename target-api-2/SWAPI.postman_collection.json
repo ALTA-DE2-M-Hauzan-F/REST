@@ -121,6 +121,37 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "https://swapi.dev/api/people/?name=Budi&height=160&mass=60",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/?name=Andy&height=160",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Andy"
+						},
+						{
+							"key": "height",
+							"value": "160"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
