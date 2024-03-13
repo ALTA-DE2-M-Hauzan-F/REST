@@ -18,7 +18,7 @@
 					"mode": "formdata",
 					"formdata": []
 				},
-				"url": "https://swapi.dev/api/people/1/"
+				"url": "https://swapi.dev/api/people/5/"
 			},
 			"response": []
 		},
@@ -91,6 +91,34 @@
 				"method": "DELETE",
 				"header": [],
 				"url": "https://swapi.dev/api/people/1/"
+			},
+			"response": []
+		},
+		{
+			"name": "https://swapi.dev/api/people/1/?birth_year=1987",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/1/?birth_year=1995",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"1",
+						""
+					],
+					"query": [
+						{
+							"key": "birth_year",
+							"value": "1995"
+						}
+					]
+				}
 			},
 			"response": []
 		}
