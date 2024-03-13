@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "beb3b81a-87e3-4182-80dc-384bc4808d72",
+		"name": "SWAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33409292"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "https://swapi.dev/api/people/1/"
+			},
+			"response": []
+		},
+		{
+			"name": "https://swapi.dev/api/people/?name=Budi&height=160&mass=60",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/?name=Budi&height=160&mass=60",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Budi"
+						},
+						{
+							"key": "height",
+							"value": "160"
+						},
+						{
+							"key": "mass",
+							"value": "60"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://swapi.dev/api/people/1/?birth_year=1987",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/1/?birth_year=1987",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"1",
+						""
+					],
+					"query": [
+						{
+							"key": "birth_year",
+							"value": "1987"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://swapi.dev/api/people/1/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://swapi.dev/api/people/1/"
+			},
+			"response": []
+		}
+	]
+}
